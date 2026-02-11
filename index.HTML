@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIPT AYURVEDA</title>
+    <style>
+        body{
+            font-family:arial;
+            margin:0;
+            padding:0;
+            background:#f8f3e9;
+            text-align: center;
+        }
+
+        header{
+            background:linear-gradient(180deg,#1f4d3a);
+            color:white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        header h1{
+            margin: 0;
+            font-size: 32px;
+            background:linear-gradient(180deg,#1f4d3a);
+        }
+
+        header h2{
+            background:linear-gradient(180deg,#1f4d3a);
+            margin:5px;
+            font-size: 24px;
+        }
+
+        header p{
+            background:#1f4d3a;
+            margin: 5px;
+            font-size:18px;
+        }
+
+        img{
+            width:80%;
+            border-radius: 10px;
+            margin: 15px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .section-title{
+            font-size: xx-large;
+            margin-top: 20px;
+            color: #1b5e20;
+        }
+        footer {
+            background:#010b20;
+            color: white;
+            padding: 12px;
+            font-size: 16px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .instagram{
+            background: #010b20;
+            color: #e9ecf0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+
+
+        .disease-container{
+            background: white;
+            padding: 15px;
+            margin: 20px auto ;
+            width:85%;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        .disease-container div {
+            background: #a5d6a7;
+            margin: 8px;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #1b5e20;
+        }
+
+        .cta-box {
+            background: #ffeb3b;
+            padding: 20px;
+            margin-top: 25px;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .cta-box h4 {
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        .disease-box {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: #b6e0b6;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.logo-container{
+  display: flex;
+  align-items: center;        /* vertical center */
+  justify-content: flex-start; /* left */
+  gap: 12px;                  /* space between logo & text */
+  padding: 10px 20px;
+}
+
+.logo{
+  width: 120px;
+  height: auto;
+}
+
+.clinic-name{
+  font-size: 28px;
+  font-weight: 600;
+  color: #e9ecf0;   /* blue clinic theme */
+  margin: 0;        /* remove default p margin */
+}
+
+.tagline-bar{
+    background:linear-gradient(180deg,#1f4d3a);
+    padding:12px 0;
+    text-align: center;
+
+}
+
+.tagline-pill{
+    display:inline-block;
+    padding:10px 30px;
+    border: 5px;
+    border-radius: 40px;
+    color: #e6b97a;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 16px;
+    background:transparent;
+    box-shadow: 0 0 10px rgba(190, 108, 0, 0.3);
+}
+
+.hero{
+    min-height: 70vh;
+    background: linear-gradient(rgba(20,60,45,0.75)),
+    url("images\ \(1\).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+
+    display: flex;
+  align-items:center;
+  justify-content:center;
+  text-align:justify;
+  color: white;
+}
+
+.text{
+    font-size: x-large;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contact-section {
+    background: #d8aa78;
+    padding: 50px 60px;
+    border-radius: 40px;
+    color: #fff;
+    max-width: 1100px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+.contact-section h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-style: initial;
+}
+
+.subtitle {
+    font-size: 26px;
+    opacity: 0.9;
+    margin-bottom: 40px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.icon {
+    width: 55px;
+    height: 55px;
+    background: rgba(255,255,255,0.25);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+}
+
+.contact-item h4 {
+    margin: 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.contact-item p {
+    margin: 5px 0 0;
+    font-size: 18px;
+}
+
+.appointment-box{
+        max-width:450px;
+        margin:40px auto;
+        background:#ffffff;
+        padding:25px;
+        border-radius:10px;
+        box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    }
+    .appointment-box h2{
+        text-align:center;
+        color:#02800f;
+        margin-bottom:20px;
+    }
+    label{
+        font-weight:bold;
+        display:block;
+        margin-top:15px;
+    }
+    input, select, textarea{
+        width:100%;
+        padding:10px;
+        margin-top:5px;
+        border:1px solid #ccc;
+        border-radius:6px;
+        font-size:14px;
+    }
+    textarea{
+        resize:none;
+        height:80px;
+    }
+    button{
+        width:100%;
+        margin-top:20px;
+        padding:12px;
+        background:#014f30;
+        color:white;
+        font-size:16px;
+        border:none;
+        border-radius:6px;
+        cursor:pointer;
+    }
+    button:hover{
+        background:#163a86;
+    } 
+
+    .footer-line{
+    width: 100%;
+    height: 1px;
+    background: rgba(255,255,255,0.2);
+    margin: 30px 0;
+}
+
+
+    
+.footer {
+    background: linear-gradient(180deg, #06162f, #020b1a);
+    color: #ffffff;
+    text-align: center;
+    padding-top: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.footer-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #d0d8e8;
+    margin-bottom: 20px;
+}
+
+.footer-content p span {
+    color: #4fc3f7;
+    font-weight: bold;
+}
+
+.insta-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(45deg, #1da1f2, #0d47a1);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.insta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    padding: 12px;
+    background: #020814;
+    font-size: 14px;
+    color: #b0b8c8;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+
+
+
+
+    
+
+    </style>
+</head>
+<body>
+<header>
+  <div class="logo-container">
+    <img src="ChatGPT Image Feb 11, 2026, 09_42_17 PM.png" class="logo" alt="Tript Ayurveda Clinic Logo">
+    <p class="clinic-name">Tript Ayurveda Clinic</p>
+  </div>
+</header>
+    <div>
+        <img src="FINAL.png" alt="Tript Ayurveda Clinic">
+    </div>
+
+    <h1 class = "section-title">Holistic Healing with a Scientific Ayurvedic Approach </h1>
+    <p class="text">
+        Welcome to tript ayurveda clinic - where traditional healing meets modern medical advancements.<br>
+        We specialize intreating the root cause of disease through ayurveda (BAMS-Based medical practice) combined with evidence -supported therapies.
+        <br>
+        Our clinic is led by Certified Ayurvedic Professionals and follows standardized treatment protocols including Panchakarma,Ayurvedic formulations, and adjunct Modern Therapies for safe and effective healing.
+    </p>
+    <BR>
+
+
+<DIV>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScPCpQb1zFjEVTFeUXJv2eNN3Rj4QCgp5bW-0nVStR3CRcu6A/viewform?usp=publish-editor" class="insta-btn">QUICK APPOINTMENT FORM</a>
+
+</DIV>
+
+<BR>
+
+    <div class="disease-container">
+        <P class="section-title">SPECIALIZING IN HOLISTIC HEALING OF </P>
+        
+        <DIV>
+            <a href="skin.html">SKIN DISEASES</a>
+        </DIV>
+        <DIV>
+            <a href="gynaecologicaldiseases.html">GYNAECOLOGICAL DISEASES</a>
+        </DIV>
+        <DIV>
+            <a href="jointdisorder.html">JOINT DISORDERS & ARTHRITIS</a>
+        </DIV>
+        <DIV>
+            <a href = "stress.html">STRESS & ANXIETY</a> 
+        </DIV>
+        <DIV>
+            <a href="hypertension.html">HYPERTENSION(BP)</a>
+        </DIV>
+        <DIV>
+            <a href = "diabetes.html">DIABETES MANAGEMENT</a>
+        </DIV>
+        <DIV>
+            <a href="thyroid.html">THYROID DISEASES</a>
+        </DIV>
+        <DIV>
+            <a href="piles.html">PILES & FISSURES</a>
+        </DIV>
+    </div>
+
+    <div class="contact-section">
+    <h2>Contact Details</h2>
+    <p class="subtitle">
+        Book your physical or online consultation with Dr. Garima today.
+    </p>
+
+    <div class="contact-item">
+        <div class="icon">📍</div>
+        <div class="contact-item">
+            <h4>OUR CLINIC</h4>
+            <p>Near Nijjar Chowk, Opposite to Motia Harmony city, Sector 126, Mohali</p>
+        </div>
+    </div>
+
+    <div class="contact-item">
+        <div class="icon">📞</div>
+        <div class="contact-item">
+            <h4>PHONE</h4>
+            <p>+91 8427908530 , +91 7719704488</p>
+        </div>
+    </div>
+</div>
+
+<BR>
+
+
+
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <h2>Tript Ayurveda Clinic</h2>
+        <p>
+            Root-cause healing using <span>Panchakarma</span>, <span>Herbs</span>, and <span>Diet</span><br>
+            under <strong>Dr. Garima</strong>
+        </p>
+
+        <a href="https://www.instagram.com/tript.08/" class="insta-btn">Follow us on Instagram</a>
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Tript Ayurveda Clinic. All Rights Reserved.
+    </div>
+</footer>
+</html>
